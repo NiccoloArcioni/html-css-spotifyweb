@@ -12,3 +12,92 @@ main grey #141922
 lime #639029
 grey write #A3A3A3
 song time #C1C1C1 */
+
+/* Utility */
+/* margin */
+.ms_margin_top_60 {
+  margin-top: 60px;
+}
+.ms_margin_bottom_60 {
+  margin-bottom: 60px;
+}
+
+.ms_margin_top_30 {
+  margin-top: 30px;
+}
+.ms_margin_bottom_30 {
+  margin-bottom: 30px;
+}
+
+.ms_margin_top_15 {
+  margin-top: 15px;
+}
+.ms_margin_bottom_15 {
+  margin-bottom: 15px;
+}
+
+/* padding */
+.ms_padding_top_60 {
+  padding-top: 60px;
+}
+.ms_padding_bottom_60 {
+  padding-bottom: 60px;
+}
+
+.ms_padding_top_30 {
+  padding-top: 30px;
+}
+.ms_padding_bottom_30 {
+  padding-bottom: 30px;
+}
+
+.ms_padding_top_15 {
+  padding-top: 15px;
+}
+.ms_padding_bottom_15 {
+  padding-bottom: 15px;
+}
+
+/* wrapper */
+.ms_wrapper {
+    width: 100%;
+    height: ca100vh;
+}
+
+/* MAIN */
+/* main nav */
+.ms_main_nav_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100% - 90px);
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #000000 ;
+}
+
+/* album secion */
+.ms_albums_section {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    margin-bottom: 90px;
+    background-color: #141922;
+}
+
+.ms_upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    background-color: #080B12;
+}
+
+/* FOOTER */
+.ms_song_bg {
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+}
