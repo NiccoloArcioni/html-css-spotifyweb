@@ -85,6 +85,17 @@ ul {
     font-weight: 600;
 }
 
+/* button */
+.ms_btn_white {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.ms_btn_rounded {
+    border-radius: 20px;
+    padding: 10px 40px;
+}
 /* MAIN */
 /* main nav */
 .ms_main_nav_bg {
@@ -206,6 +217,19 @@ span.ms_create_playlist {
     width: calc(100% - 300px);
     height: 80px;
     background-color: #080B12;
+}
+
+/* button */
+.ms_upgrade .btn_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+    height: 100%;
+}
+
+.btn_container a {
+    font-size: 0.8em;
 }
 
 /* FOOTER */
