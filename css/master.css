@@ -14,54 +14,75 @@ grey write #A3A3A3
 song time #C1C1C1 */
 
 /* Utility */
+ul {
+    list-style: none;
+}
+
 /* margin */
 .ms_margin_top_60 {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 .ms_margin_bottom_60 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .ms_margin_top_30 {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 .ms_margin_bottom_30 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .ms_margin_top_15 {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 .ms_margin_bottom_15 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 /* padding */
+.ms_padding_20{
+    padding: 20px;
+}
+
 .ms_padding_top_60 {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 .ms_padding_bottom_60 {
-  padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .ms_padding_top_30 {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 .ms_padding_bottom_30 {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .ms_padding_top_15 {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 .ms_padding_bottom_15 {
-  padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 /* wrapper */
 .ms_wrapper {
     width: 100%;
     height: ca100vh;
+}
+
+/* text color */
+.ms_text_white {
+    color: #fff;
+}
+
+.ms_text_grey {
+    color: #A3A3A3;
+}
+/* font weight */
+.ms_font_w_600 {
+    font-weight: 600;
 }
 
 /* MAIN */
@@ -72,9 +93,98 @@ song time #C1C1C1 */
     left: 0;
     height: calc(100% - 90px);
     width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: #000000 ;
+}
+
+.ms_main_nav_contents {
+    position: relative;
+    height: 100%;
+    min-height: 450px;
+}
+
+#ms_logo_img {
+    width: 150px;
+}
+
+.ms_main_nav_contents ul li {
+    padding: 5px 0 5px 20px;
+}
+
+.ms_top_nav ul li a img {
+    width: 25px;
+    height: 25px;
+}
+
+.ms_top_nav ul li:first-child {
+    border-left: 2px solid #91e425;
+    padding-right: 20px;
+}
+
+
+/* second nav */
+.ms_playlist_nav h5 {
+    margin-left: 20px;
+}
+
+.ms_playlist_nav ul {
+    display: inline-block;
+    height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+span.ms_create_playlist {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #A3A3A3;
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+/* profile */
+.ms_bottom_nav_profile {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.ms_bottom_nav_profile .ms_download_app {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #A3A3A3;
+}
+.ms_bottom_nav_profile .ms_download_app a img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.ms_profile {
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+.ms_bottom_nav_profile .ms_profile a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #858585;
+}
+.ms_bottom_nav_profile .ms_profile a img {
+    width: 100%;
+    height: 90%;
+}
+.ms_bottom_nav_profile .ms_profile span {
+    font-size: 1.2em;
 }
 
 /* album secion */
@@ -82,6 +192,7 @@ song time #C1C1C1 */
     width: calc(100% - 300px);
     margin-left: 300px;
     margin-bottom: 90px;
+    margin-top: 79px;
     background-color: #141922;
 }
 
@@ -90,6 +201,7 @@ song time #C1C1C1 */
     top: 0;
     right: 0;
     width: calc(100% - 300px);
+    height: 80px;
     background-color: #080B12;
 }
 
@@ -100,4 +212,28 @@ song time #C1C1C1 */
     height: 90px;
     width: 100%;
     background-color: #282828;
+}
+
+
+/* Media Query */
+@media all and (max-width: 767px) {
+    .ms_main_nav_bg {
+        width: 50px;
+    }
+
+    .ms_albums_section {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+
+    .ms_upgrade {
+        width: calc(100% - 50px);
+    }
+
+    .ms_bottom_nav_profile {
+        width: 50px;
+    }
+    .ms_download_app {
+        border-bottom: none;
+    }
 }
