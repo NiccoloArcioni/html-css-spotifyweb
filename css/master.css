@@ -106,6 +106,11 @@ ul {
     width: 150px;
 }
 
+#ms_logo_img_small {
+    width: 25px;
+    height: 25px;
+}
+
 .ms_main_nav_contents ul li {
     padding: 5px 0 5px 20px;
 }
@@ -127,9 +132,7 @@ ul {
 }
 
 .ms_playlist_nav ul {
-    display: inline-block;
-    height: 300px;
-    max-height: 400px;
+    height: 40vh;
     overflow-y: auto;
 }
 
@@ -221,9 +224,14 @@ span.ms_create_playlist {
         width: 50px;
     }
 
-    .ms_albums_section {
-        width: calc(100% - 50px);
-        margin-left: 50px;
+    .ms_main_nav_bg .ms_main_nav_contents ul li,
+    .ms_logo_container {
+        padding-left: 14px;
+        padding-right: 0;
+    }
+
+    .ms_main_nav_bg .ms_main_nav_contents ul li:first-child{
+        padding-left: 10px;
     }
 
     .ms_upgrade {
@@ -232,8 +240,18 @@ span.ms_create_playlist {
 
     .ms_bottom_nav_profile {
         width: 50px;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .ms_download_app {
-        border-bottom: none;
+    .ms_bottom_nav_profile .ms_download_app {
+        border: none;
+        padding-left: 14px;
+    }
+    .ms_bottom_nav_profile .ms_profile {
+        padding-left: 10px;
+    }
+    .ms_albums_section {
+        width: calc(100% - 50px);
+        margin-left: 50px;
     }
 }
