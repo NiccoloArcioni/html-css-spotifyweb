@@ -64,6 +64,7 @@ a:hover span.ms_create_playlist {
     top: -7px;
     right: -7px;
 }
+/* FINE HOVER */
 
 /* margin */
 .ms_margin_top_60 {
@@ -199,7 +200,7 @@ a:hover span.ms_create_playlist {
 }
 
 .ms_playlist_nav ul {
-    height: 40vh;
+    height: 30vh;
     overflow-y: auto;
 }
 
