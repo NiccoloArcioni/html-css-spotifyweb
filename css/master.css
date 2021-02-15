@@ -268,6 +268,42 @@ span.ms_create_playlist {
     border-radius: 2px;
 }
 
+/* albums content */
+.ms_albums h2 {
+    font-size: 1.6em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ms_albums_container_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ms_single_album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% / 6) - 20px);
+    min-width: 150px;
+    max-width: 200px;
+    margin: 10px; 
+}
+.ms_single_album a {
+    text-align: center;
+}
+.ms_single_album a,
+.ms_single_album img {
+    width: 100%;
+    height: auto;
+}
+.ms_single_album a h4 {
+    font-size: 1em;
+}
+.ms_single_album a p {
+    font-size: 0.8em;
+}
+
 /* FOOTER */
 .ms_song_bg {
     position: fixed;
