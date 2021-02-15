@@ -221,8 +221,26 @@
                         </div>
     
                         <!-- Popular artist -->
-                        <div class="ms_popular_artist">
-    
+                        <div class="ms_popular_artist ms_albums">
+                            <h2 class="ms_text_white ms_font_w_600">Artisti più popolari</h2>
+                            <p class="ms_text_grey ms_font_w_600">Più ascolti, più accurati saranno i suggerimenti.</p>
+                            <div class="ms_albums_container_flex">
+                                <div class="ms_single_album">
+                                    <div class="ms_overlay"></div>
+                                    <a href="#">
+                                        <img src="img/youg.jpeg" alt="Lana del Rey artist profile" class="img-circle">
+                                        <h4 class="ms_text_white ms_font_w_600">Lana del Rey</h4>
+                                    </a>
+                                </div>
+                        
+                                <div class="ms_single_album">
+                                    <div class="ms_overlay"></div>
+                                    <a href="#">
+                                        <img src="img/einaudi.jpeg" alt="Ludovico Einaudi artist profile" class="img-circle">
+                                        <h4 class="ms_text_white ms_font_w_600">Ludovico Einaudi</h4>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +251,55 @@
         <footer>
             <div class="ms_song_bg">
                 <div class="ms_song_content">
+                    <!-- playing song -->
+                    <div class="ms_playing_song_left">
+                        <img src="img/sinister.jpeg" alt="Playing Song">
+                        <div class="ms_song_title ms_text_grey">
+                            <h5 class="ms_text_white ms_font_w_600">Sinister</h5>
+                            <span>Brano Nome</span>
+                        </div>
+                        <a href="#" class="ms_text_grey"><i class="far fa-heart"></i></a>
+                        <a href="#" class="ms_text_grey"><i class="far fa-folder"></i></a>
+                    </div>
 
+                    <!-- song panel -->
+                    <div class="ms_song_panel_center  ms_text_grey">
+                        <!-- buttons -->
+                        <div class="ms_playing_buttons">
+                            <a href="#" class="ms_text_white"><i class="fas fa-random"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="ms_text_white"><i class="far fa-play-circle"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-step-forward"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-redo-alt"></i></a>
+                        </div>
+
+                        <!-- song time -->
+                        <div class="ms_song_time">
+                            <span class="ms_text_white">0:25</span>
+                            <div class="ms_timebar">
+                                <div class="ms_total_time ms_bg_grey">
+                                    <a href="#"><div class="ms_time_playing ms_bg_white"></div></a>
+                                </div>
+                            </div>
+                            <span class="ms_text_white">4:35</span>
+                        </div>
+                    </div>
+
+                    <!-- volume panel -->
+                    <div class="ms_volume_panel_right  ms_text_grey">
+                        <a href="#" class="ms_text_white"><i class="fas fa-list"></i></a>
+                        <a href="#" class="ms_text_white"><i class="fas fa-desktop"></i></a>
+
+                        <!-- volume -->
+                        <div class="ms_volume">
+                            <a href="#" class="ms_text_white"><i class="fas fa-volume-up"></i></a>
+                            <div class="ms_total_volume ms_bg_grey">
+                                <a href="#">
+                                    <div class="ms_volume_playing ms_bg_white"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

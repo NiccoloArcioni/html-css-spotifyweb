@@ -85,6 +85,15 @@ ul {
     font-weight: 600;
 }
 
+/* bg colors */
+.ms_bg_grey {
+    background-color: #A3A3A3;
+}
+
+.ms_bg_white {
+    background-color: #fff;
+}
+
 /* button */
 .ms_btn_white {
     color: #fff;
@@ -305,7 +314,8 @@ span.ms_create_playlist {
 }
 
 /* create for */
-.ms_create_for p {
+.ms_create_for p,
+.ms_popular_artist p {
     font-size: 0.8em;
     margin-left: 10px;
 }
@@ -317,6 +327,110 @@ span.ms_create_playlist {
     height: 90px;
     width: 100%;
     background-color: #282828;
+}
+
+.ms_song_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* playing song */
+.ms_song_content .ms_playing_song_left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.ms_song_content .ms_playing_song_left img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+.ms_song_content .ms_playing_song_left .ms_song_title {
+    margin-right: 30px;
+}
+.ms_song_content .ms_playing_song_left .ms_song_title h5 {
+    margin-bottom: 0;
+}
+.ms_song_content .ms_playing_song_left .ms_song_title span {
+    font-size: 0.6em;
+}
+.ms_song_content .ms_playing_song_left > a,
+.ms_volume_panel_right a {
+    margin-right: 10px;
+}
+
+/* song panel */
+.ms_song_panel_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* buttons */
+.ms_playing_buttons {
+    text-align: center;
+}
+.ms_playing_buttons a {
+    margin: 0 10px;
+}
+.ms_playing_buttons a:nth-child(3) i {
+    font-size: 1.8em;
+}
+
+/* song time */
+.ms_song_time {
+    display: flex;
+    align-items: center;
+}
+.ms_song_time span {
+    font-size: 0.8em;
+    margin: 5px 15px;
+}
+
+.ms_song_time .ms_total_time {
+    position: relative;
+    height: 4px;
+    width: 20vw;
+    border-radius: 2px;
+}
+
+.ms_song_time .ms_time_playing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 2vw;
+    border-radius: 2px;
+    z-index: 2;
+}
+/* volume panel */
+.ms_volume_panel_right {
+    margin-right: 10px;
+}
+
+.ms_volume_panel_right,
+.ms_volume {
+    display: flex;
+    align-items: center;
+}
+
+.ms_volume .ms_total_volume {
+    position: relative;
+    height: 4px;
+    width: 10vw;
+    border-radius: 2px;
+}
+
+.ms_volume .ms_volume_playing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 2vw;
+    border-radius: 2px;
+    z-index: 2;
 }
 
 
