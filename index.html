@@ -19,8 +19,8 @@
                         <div class="ms_main_nav_contents">
                             <!-- logo -->
                             <div class="ms_logo_container ms_padding_20">
-                                <img id="ms_logo_img" src="img/logo.svg" alt="Spotify logo" class="hidden-xs">
-                                <img id="ms_logo_img_small" src="img/logo-small.svg" alt="" class="visible-xs-block">
+                                <img id="ms_logo_img" src="img/logo.svg" alt="Spotify logo">
+                                <img id="ms_logo_img_small" src="img/logo-small.svg" alt="Spotify logo small">
                             </div>
 
                             <!-- first nav -->
@@ -29,30 +29,28 @@
                                     <li>
                                         <a href="#">
                                             <img src="img/home.svg" alt="Home">
-                                            <span class="ms_font_w_600 ms_text_grey hidden-xs">Home</span>
+                                            <span class="ms_font_w_600 ms_text_grey">Home</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#"><img src="img/search.svg" alt="Search"></a>
-                                        <span class="ms_font_w_600 ms_text_grey hidden-xs">Cerca</span>
+                                        <span class="ms_font_w_600 ms_text_grey">Cerca</span>
                                     </li>
                                     <li>
                                         <a href="#"><img src="img/libreria.svg" alt="Libreria"></a>
-                                        <span class="ms_font_w_600 ms_text_grey hidden-xs">La tua libreria</span>
+                                        <span class="ms_font_w_600 ms_text_grey">La tua libreria</span>
                                     </li>
                                 </ul>
                             </div>
 
                             <!-- second nav -->
-                            <div class="ms_playlist_nav hidden-xs">
+                            <div class="ms_playlist_nav">
                                 <h5 class="text-uppercase ms_text_white ms_font_w_600">playlist</h5>
+                                <a href="#" class="ms_new_playlist">
+                                    <span class="ms_create_playlist">+</span>
+                                    <span class="ms_font_w_600 ms_text_grey">Crea Playlist</span>
+                                </a>
                                 <ul>
-                                    <li>
-                                        <a href="#">
-                                            <span class="ms_create_playlist">+</span>
-                                            <span class="ms_font_w_600 ms_text_grey">Crea Playlist</span>
-                                        </a>
-                                    </li>
                                     <li>
                                         <a href="#">
                                             <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
@@ -97,7 +95,7 @@
                                 <div class="ms_download_app">
                                     <a href="#">
                                         <img src="img/download.svg" alt="Download app">
-                                        <span class="ms_text_grey ms_font_w_600 hidden-xs">Installa app</span>
+                                        <span class="ms_text_grey ms_font_w_600">Installa app</span>
                                     </a>
                                 </div>
                                 <!-- profile -->
@@ -105,7 +103,7 @@
                                     <a href="#">
                                         <img src="img/profile.svg" alt="Profilo utente">
                                     </a>
-                                    <span class="ms_text_white ms_font_w_600 hidden-xs">Jonh Doe</span>
+                                    <span class="ms_text_white ms_font_w_600">Jonh Doe</span>
                                 </div>
                             </div>
                         </div>
@@ -122,6 +120,20 @@
                             <a href="#" class="btn btn-md ms_btn_white ms_btn_rounded ms_font_w_600 text-uppercase">Effettua l'Upgrade</a>
                         </div>
                     </div>
+
+                    <!-- Albums nav -->
+                    <nav>
+                        <div class="ms_albums_nav">
+                            <ul class="list-inline">
+                                <li><a href="#" class="text-uppercase ms_text_grey">in evidenza</a><div class="ms_underline"></div></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">podcast</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">classifiche</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">generi e mood</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">nuove uscite</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">scopri</a></li>
+                            </ul>
+                        </div>
+                    </nav>
 
                     <!-- Albums content -->
                     <div class="ms_albums_section_content ms_padding_15">

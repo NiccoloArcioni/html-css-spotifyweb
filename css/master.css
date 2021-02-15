@@ -147,6 +147,11 @@ ul {
     overflow-y: auto;
 }
 
+.ms_new_playlist {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
 span.ms_create_playlist {
     display: inline-flex;
     justify-content: center;
@@ -201,7 +206,7 @@ span.ms_create_playlist {
     font-size: 1.2em;
 }
 
-/* album secion */
+/* ALBUMS SECTION */
 .ms_albums_section {
     width: calc(100% - 300px);
     margin-left: 300px;
@@ -210,6 +215,7 @@ span.ms_create_playlist {
     background-color: #141922;
 }
 
+/* upgrade */
 .ms_upgrade {
     position: fixed;
     top: 0;
@@ -232,6 +238,36 @@ span.ms_create_playlist {
     font-size: 0.8em;
 }
 
+/* albums nav */
+.ms_albums_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+.ms_albums_nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ms_albums_nav ul li {
+    font-size: 0.87em;
+    margin: 10px;
+}
+
+.ms_albums_nav ul li:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ms_albums_nav ul li .ms_underline {
+    height: 2px;
+    width: 30px;
+    background-color: #91e425;
+    border-radius: 2px;
+}
+
 /* FOOTER */
 .ms_song_bg {
     position: fixed;
@@ -243,9 +279,25 @@ span.ms_create_playlist {
 
 
 /* Media Query */
-@media all and (max-width: 767px) {
+/* smartphone */
+@media all and (max-width: 600px) {
     .ms_main_nav_bg {
         width: 50px;
+    }
+
+    #ms_logo_img,
+    .ms_top_nav span,
+    .ms_playlist_nav,
+    .ms_bottom_nav_profile span {
+        display: none;
+    }
+
+    #ms_logo_img_small {
+        display: block;
+    }
+
+    .ms_top_nav ul li:first-child {
+        border: none;
     }
 
     .ms_main_nav_bg .ms_main_nav_contents ul li,
@@ -277,5 +329,11 @@ span.ms_create_playlist {
     .ms_albums_section {
         width: calc(100% - 50px);
         margin-left: 50px;
+    }
+}
+
+@media all and (min-width: 600px) {
+        #ms_logo_img_small {
+        display: none;
     }
 }
