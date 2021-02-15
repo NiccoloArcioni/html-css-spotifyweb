@@ -204,6 +204,18 @@ a:hover span.ms_create_playlist {
     overflow-y: auto;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background-color: #858585;
+}
+/* fine scrollbar */
+
 .ms_new_playlist {
     padding: 20px;
     margin-bottom: 10px;
