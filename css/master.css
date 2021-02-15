@@ -14,8 +14,24 @@ grey write #A3A3A3
 song time #C1C1C1 */
 
 /* Utility */
+/* general */
 ul {
     list-style: none;
+}
+
+/* hover */
+a:hover,
+a:hover span {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover span.ms_create_playlist {
+    color: #000;
+    background-color: #fff;
+}
+
+.ms_single_album .ms_img_container:hover .ms_overlay {
+    visibility: visible;
 }
 
 /* margin */
@@ -112,7 +128,7 @@ ul {
     top: 0;
     left: 0;
     height: calc(100% - 90px);
-    width: 300px;
+    width: 250px;
     background-color: #000000 ;
 }
 
@@ -180,7 +196,7 @@ span.ms_create_playlist {
     bottom: 0px;
     left: 0;
     right: 0;
-    width: 300px;
+    width: 250px;
     padding: 10px 20px;
     background-color: #000;
 }
@@ -217,8 +233,8 @@ span.ms_create_playlist {
 
 /* ALBUMS SECTION */
 .ms_albums_section {
-    width: calc(100% - 300px);
-    margin-left: 300px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
     margin-bottom: 90px;
     margin-top: 79px;
     background-color: #141922;
@@ -229,7 +245,7 @@ span.ms_create_playlist {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 80px;
     background-color: #080B12;
 }
@@ -313,6 +329,26 @@ span.ms_create_playlist {
     font-size: 0.8em;
 }
 
+.ms_img_container {
+    position: relative;
+}
+
+.ms_single_album .ms_img_container .ms_overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    visibility: hidden;
+    z-index: 2;
+}
+.ms_single_album .ms_img_container .ms_overlay i {
+    font-size: 2em;
+}
 /* create for */
 .ms_create_for p,
 .ms_popular_artist p {
@@ -327,6 +363,7 @@ span.ms_create_playlist {
     height: 90px;
     width: 100%;
     background-color: #282828;
+    z-index: 999;
 }
 
 .ms_song_content {
@@ -488,8 +525,16 @@ span.ms_create_playlist {
     }
 }
 
+/* logo spotify small */
 @media all and (min-width: 600px) {
         #ms_logo_img_small {
         display: none;
     }
 }
+
+/* background album section */
+/* @media all and (min-height: 1263px) {
+    .ms_albums_section {
+        height: 100vh;
+    }
+} */
