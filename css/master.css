@@ -19,7 +19,8 @@ ul {
     list-style: none;
 }
 
-/* hover */
+/* HOVER */
+/* links */
 a:hover,
 a:hover span {
     color: #fff;
@@ -30,8 +31,38 @@ a:hover span.ms_create_playlist {
     background-color: #fff;
 }
 
+/* overlay */
 .ms_single_album .ms_img_container:hover .ms_overlay {
     visibility: visible;
+}
+
+/* upgrade */
+.ms_upgrade .btn_container a:hover {
+    color: white;
+    font-size: 1em;
+    padding: 12px 42px;
+    border-radius: 25px;
+}
+
+/* play button */
+.ms_playing_buttons a:nth-child(3):hover i{
+    font-size: 2em;
+}
+
+/* song time - volume*/
+.ms_timebar:hover .ms_time_playing,
+.ms_volume:hover .ms_volume_playing {
+    background-color: #91e425;
+}
+.ms_timebar:hover .ms_time_playing::after,
+.ms_volume:hover .ms_volume_playing::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f111';
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: -7px;
+    right: -7px;
 }
 
 /* margin */
@@ -408,7 +439,8 @@ span.ms_create_playlist {
 }
 /* buttons */
 .ms_playing_buttons {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .ms_playing_buttons a {
     margin: 0 10px;
@@ -534,8 +566,8 @@ span.ms_create_playlist {
 }
 
 /* background album section */
-/* @media all and (min-height: 1263px) {
+@media all and (min-height: 1263px) {
     .ms_albums_section {
         height: 100vh;
     }
-} */
+}
