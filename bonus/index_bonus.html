@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="master_bonus.css">
+</head>
+
+<body>
+    <div class="ms_wrapper">
+        <main>
+            <!-- Nav -->
+            <section>
+                <nav>
+                    <div class="ms_main_nav_bg">
+                        <div class="ms_main_nav_contents">
+                            <!-- logo -->
+                            <div class="ms_logo_container ms_padding_20">
+                                <img id="ms_logo_img" src="../img/logo.svg" alt="Spotify logo">
+                                <img id="ms_logo_img_small" src="../img/logo-small.svg" alt="Spotify logo small">
+                            </div>
+
+                            <!-- first nav -->
+                            <div class="ms_top_nav ms_padding_bottom_15">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/home.svg" alt="Home">
+                                            <span class="ms_font_w_600 ms_text_grey">Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/search.svg" alt="Search">
+                                            <span class="ms_font_w_600 ms_text_grey">Cerca</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/libreria.svg" alt="Libreria">
+                                            <span class="ms_font_w_600 ms_text_grey">La tua libreria</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- second nav -->
+                            <div class="ms_playlist_nav">
+                                <h5 class="text-uppercase ms_text_white ms_font_w_600">playlist</h5>
+                                <a href="#" class="ms_new_playlist">
+                                    <span class="ms_create_playlist">+</span>
+                                    <span class="ms_font_w_600 ms_text_grey">Crea Playlist</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="ms_font_w_600 ms_text_grey">Nome Playlist</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- bottom nav -->
+                            <div class="ms_bottom_nav_profile">
+                                <!-- download app -->
+                                <div class="ms_download_app">
+                                    <a href="#">
+                                        <img src="../img/download.svg" alt="Download app">
+                                        <span class="ms_text_grey ms_font_w_600">Installa app</span>
+                                    </a>
+                                </div>
+                                <!-- profile -->
+                                <div class="ms_profile">
+                                    <a href="#">
+                                        <img src="../img/profile.svg" alt="Profilo utente">
+                                    </a>
+                                    <span class="ms_text_white ms_font_w_600">Jonh Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <!-- Albums -->
+            <section>
+                <div class="ms_albums_section">
+                    <!-- Upgrade -->
+                    <div class="ms_upgrade">
+                        <div class="btn_container">
+                            <a href="#"
+                                class="btn btn-md ms_btn_white ms_btn_rounded ms_font_w_600 text-uppercase">Effettua
+                                l'Upgrade</a>
+                        </div>
+                    </div>
+
+                    <!-- Albums nav -->
+                    <nav>
+                        <div class="ms_albums_nav">
+                            <ul class="list-inline">
+                                <li><a href="#" class="text-uppercase ms_text_grey">in evidenza</a>
+                                    <div class="ms_underline"></div>
+                                </li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">podcast</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">classifiche</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">generi e mood</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">nuove uscite</a></li>
+                                <li><a href="#" class="text-uppercase ms_text_grey">scopri</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- Albums content -->
+                    <div class="ms_albums_section_content ms_padding_15">
+                        <!-- Recently played -->
+                        <div class="ms_album_played ms_albums">
+                            <h2 class="ms_text_white ms_font_w_600">Recently played</h2>
+                            <div class="ms_albums_container_flex">
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/metal_lifting.jpg" alt="Playlist played 1">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Heavy Metal</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Subtitle</p>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/stranger.jpeg" alt="Playlist played 2">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Stranger Thing, Vol.1 (a Netflix
+                                            Original Series Soundtrack)</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Kyle Dixon & Michael Stein</p>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/aquietplace.jpeg" alt="Playlist played 3">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">A quiet place</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Subtitle</p>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/split.jpeg" alt="Playlist played 4">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Split</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Subtitle</p>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/cure.jpeg" alt="Playlist played 5">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">A cure for wellnes</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Subtitle</p>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/sinister.jpeg" alt="Playlist played 6">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Sinister</h4>
+                                        <p class="ms_text_grey ms_font_w_600">Subtitle</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Create for -->
+                        <div class="ms_create_for ms_albums">
+                            <h2 class="ms_text_white ms_font_w_600">Creato per John Doe</h2>
+                            <p class="ms_text_grey ms_font_w_600">Più ascolti, più accurati saranno i suggerimenti.</p>
+                            <div class="ms_albums_container_flex">
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/radar.jpeg" alt="Release Radar">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Release Radar</h4>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/mixdaily.jpeg" alt="Daily Mix 1">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Daily Mix 1</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popular artist -->
+                        <div class="ms_popular_artist ms_albums">
+                            <h2 class="ms_text_white ms_font_w_600">Artisti più popolari</h2>
+                            <p class="ms_text_grey ms_font_w_600">Più ascolti, più accurati saranno i suggerimenti.</p>
+                            <div class="ms_albums_container_flex">
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay img-circle"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/youg.jpeg" alt="Lana del Rey artist profile"
+                                                class="img-circle">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Lana del Rey</h4>
+                                    </a>
+                                </div>
+
+                                <div class="ms_single_album">
+                                    <a href="#">
+                                        <div class="ms_img_container">
+                                            <div class="ms_overlay img-circle"><i class="far fa-play-circle"></i></div>
+                                            <img src="../img/einaudi.jpeg" alt="Ludovico Einaudi artist profile"
+                                                class="img-circle">
+                                        </div>
+                                        <h4 class="ms_text_white ms_font_w_600">Ludovico Einaudi</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Song -->
+        <footer>
+            <div class="ms_song_bg">
+                <div class="ms_song_content">
+                    <!-- playing song -->
+                    <div class="ms_playing_song_left">
+                        <img src="../img/sinister.jpeg" alt="Playing Song">
+                        <div class="ms_song_title ms_text_grey">
+                            <h5 class="ms_text_white ms_font_w_600">Sinister</h5>
+                            <span>Brano Nome</span>
+                        </div>
+                        <a href="#" class="ms_text_grey"><i class="far fa-heart"></i></a>
+                        <a href="#" class="ms_text_grey"><i class="far fa-folder"></i></a>
+                    </div>
+
+                    <!-- song panel -->
+                    <div class="ms_song_panel_center  ms_text_grey">
+                        <!-- buttons -->
+                        <div class="ms_playing_buttons">
+                            <a href="#" class="ms_text_white"><i class="fas fa-random"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="ms_text_white"><i class="far fa-play-circle"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-step-forward"></i></a>
+                            <a href="#" class="ms_text_white"><i class="fas fa-redo-alt"></i></a>
+                        </div>
+
+                        <!-- song time -->
+                        <div class="ms_song_time">
+                            <span class="ms_text_white">0:25</span>
+                            <div class="ms_timebar">
+                                <div class="ms_total_time ms_bg_grey">
+                                    <a href="#">
+                                        <div class="ms_time_playing ms_bg_white"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="ms_text_white">4:35</span>
+                        </div>
+                    </div>
+
+                    <!-- volume panel -->
+                    <div class="ms_volume_panel_right  ms_text_grey">
+                        <a href="#" class="ms_text_white"><i class="fas fa-list"></i></a>
+                        <a href="#" class="ms_text_white"><i class="fas fa-desktop"></i></a>
+
+                        <!-- volume -->
+                        <div class="ms_volume">
+                            <a href="#" class="ms_text_white"><i class="fas fa-volume-up"></i></a>
+                            <div class="ms_total_volume ms_bg_grey">
+                                <a href="#">
+                                    <div class="ms_volume_playing ms_bg_white"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
