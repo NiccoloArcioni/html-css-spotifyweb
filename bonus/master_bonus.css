@@ -1,0 +1,16 @@
+.ms_albums_container_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-right: 10px;
+}
+
+.ms_albums_container_flex::-webkit-scrollbar {
+    display: none;
+}
+
+@media all and (max-height: 350px) {
+    .ms_upgrade {
+        visibility: hidden;
+    }
+}

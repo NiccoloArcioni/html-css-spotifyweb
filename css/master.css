@@ -205,11 +205,11 @@ a:hover span.ms_create_playlist {
 }
 
 /* scrollbar */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;
     background-color: #fff;
 }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     border: 2px solid #fff;
     background-color: #858585;
@@ -280,7 +280,7 @@ span.ms_create_playlist {
     width: calc(100% - 250px);
     margin-left: 250px;
     margin-bottom: 90px;
-    margin-top: 79px;
+    padding-top: 79px;
     background-color: #141922;
 }
 
@@ -434,10 +434,13 @@ span.ms_create_playlist {
     margin-right: 30px;
 }
 .ms_song_content .ms_playing_song_left .ms_song_title h5 {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 .ms_song_content .ms_playing_song_left .ms_song_title span {
     font-size: 0.6em;
+    margin: 0;
+    padding: 0;
 }
 .ms_song_content .ms_playing_song_left > a,
 .ms_volume_panel_right a {
