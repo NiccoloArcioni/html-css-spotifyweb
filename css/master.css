@@ -165,9 +165,10 @@ a:hover span.ms_create_playlist {
 }
 
 .ms_main_nav_contents {
-    position: relative;
-    height: 100%;
-    min-height: 450px;
+    width: 100%;
+    height: calc(100% - 100px);
+    min-height: 400px;
+    overflow:hidden;
 }
 
 #ms_logo_img {
@@ -195,12 +196,16 @@ a:hover span.ms_create_playlist {
 
 
 /* second nav */
+.ms_playlist_nav {
+    height: calc(100% - 180px);
+}
+
 .ms_playlist_nav h5 {
     margin-left: 20px;
 }
 
 .ms_playlist_nav ul {
-    height: 30vh;
+    height: calc(100% - 100px);
     overflow-y: auto;
 }
 
@@ -236,10 +241,7 @@ span.ms_create_playlist {
 
 /* profile */
 .ms_bottom_nav_profile {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
+    height: 100px;
     width: 250px;
     padding: 10px 20px;
     background-color: #000;
@@ -433,14 +435,9 @@ span.ms_create_playlist {
 .ms_song_content .ms_playing_song_left .ms_song_title {
     margin-right: 30px;
 }
-.ms_song_content .ms_playing_song_left .ms_song_title h5 {
-    margin: 0;
-    padding: 0;
-}
+
 .ms_song_content .ms_playing_song_left .ms_song_title span {
     font-size: 0.6em;
-    margin: 0;
-    padding: 0;
 }
 .ms_song_content .ms_playing_song_left > a,
 .ms_volume_panel_right a {

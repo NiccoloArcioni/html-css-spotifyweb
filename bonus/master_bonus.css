@@ -10,7 +10,7 @@
     100% {transform: scale(1);}
 }
 
-/* flex album container */
+/* flex album container (Recently payed/ Create for/ Popular artist */
 .ms_albums_container_flex {
     display: flex;
     flex-wrap: nowrap;
